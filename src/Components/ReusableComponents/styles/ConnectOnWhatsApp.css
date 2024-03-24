@@ -1,0 +1,45 @@
+.ConnectOnWhatsApp {
+   background-color: #634bfa;
+   border-radius: 6px;
+   padding: 10px 20px;
+   display: inline-block;
+   margin-top: 18px;
+}
+
+#ConnectOnWhatsApp-Link {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+#WhatsApp-Icon {
+   background-color: #25D366;
+   color: white;
+   padding: 2px;
+   border-radius: 4px;
+   box-shadow: 0px 1px 20px #00000033;
+   font-size: 30px;
+}
+
+.WhatsAppText {
+   font-size: 18px;
+   margin-left: 8px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+   .ConnectOnWhatsApp {
+      padding: 8px 16px;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .ConnectOnWhatsApp {
+      padding: 6px 12px;
+   }
+
+   .WhatsAppText {
+      font-size: 12px;
+   }
+}

@@ -1,0 +1,76 @@
+.Gallery {
+  padding: 100px 100px 10px;
+}
+
+.Gallery-Heading {
+  text-align: center;
+  font-size: 35px;
+}
+
+.Gallery-Highlight {
+  background: linear-gradient(to right, #29e2e8, #507df4);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.Gallery-Container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 13px;
+  margin-top: 60px;
+}
+
+.Gallery-Container-Heading {
+  text-align: center;
+  grid-column: 1/-1;
+  margin: 50px 0px 15px;
+  font-size: 26px;
+}
+
+.LoadMore {
+  text-align: center;
+  grid-column: 1/-1;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.Gallery-Join {
+  text-align: center;
+}
+
+.Gallery-SubHeading {
+  font-size: 22px;
+  margin-top: 45px;
+}
+
+@media screen and (max-width: 1200px) {
+  .Gallery {
+    padding: 100px 45px 10px;
+  }
+  .Gallery-Container {
+   grid-template-columns: repeat(3, 1fr);
+ }
+}
+
+@media screen and (max-width: 900px) {
+  .Gallery {
+    padding: 100px 35px 10px;
+  }
+
+  .Gallery-Container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Gallery {
+    padding: 100px 20px 10px;
+  }
+
+  .Gallery-Container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 22px;
+  }
+}

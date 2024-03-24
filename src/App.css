@@ -1,0 +1,29 @@
+html {
+  scroll-behavior: smooth;
+}
+.Main-App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Container-Main-App {
+  width: 100%;
+  max-width: 1600px;
+}
+div:where(.swal2-container) .swal2-html-container {
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 1;
+  justify-content: center;
+  margin: 1em 1.6em 0.3em;
+  padding: 0;
+  overflow: auto;
+  color: inherit;
+  font-size: 1.125em;
+  font-weight: normal;
+  line-height: normal;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-word;
+}

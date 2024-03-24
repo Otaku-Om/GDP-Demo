@@ -1,0 +1,161 @@
+.JoinInstagram {
+   padding: 0 100px;
+   margin-top: 100px;
+}
+
+.JoinInstagram-Content {
+   margin-bottom: 30px;
+}
+
+.JoinInstagram-Content h2 {
+   font-size: 34px;
+}
+
+.JoinInstagram-Content-Highlight {
+   background: linear-gradient(to right, #29e2e8, #507df4);
+   -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#JoinInstagram-Content-Button {
+   background-color: #000;
+   display: inline-flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 12px 14px;
+   border-radius: 6px;
+   outline: 0.1px solid #5a5a5a;
+   margin-top: 20px;
+}
+
+#Insta-Icon {
+   font-size: 30px;
+   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+   padding: 3px;
+   border-radius: 5px;
+}
+
+.JoinInstagram-Content-Button-Text {
+   font-size: 14px;
+   margin-left: 10px;
+}
+
+.JoinInstagram-Container {
+   padding: 6% 0;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 20px;
+}
+
+.JoinInstagram-Container-Card {
+   width: 100%;
+   height: 380px;
+   border-radius: 20px;
+}
+
+.JoinInstagram-Container-Card:nth-child(2) {
+   transform: translate(0, -16%);
+}
+
+.JoinInstagram-Container-Card:nth-child(3) {
+   transform: translate(0, 16%);
+}
+
+.JoinInstagram-Container-Card img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: left;
+   border-radius: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+   .JoinInstagram {
+      padding: 0 45px;
+      margin-top: 80px;
+   } 
+
+   .JoinInstagram-Container-Card {
+      height: 330px;
+   }
+
+   .JoinInstagram-Container-Card img {
+      object-position: center;
+   }
+   
+}
+
+@media screen and (max-width: 1030px) {
+   .JoinInstagram-Container {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .JoinInstagram-Container-Card {
+      height: 320px;
+   }
+
+   .JoinInstagram-Container-Card img {
+      object-position: left;
+   }
+}
+
+@media screen and (max-width: 900px) {
+   .JoinInstagram {
+      padding: 0 35px;
+      margin-top: 60px;
+   } 
+}
+
+@media screen and (max-width: 600px) {
+   .JoinInstagram {
+      padding: 0 20px;
+   }  
+
+   .JoinInstagram-Container {
+      grid-template-columns: repeat(1, 1fr);
+   }
+   .JoinInstagram-Content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .JoinInstagram-Content h2 {
+      font-size: 30px;
+      text-align: center;
+   }
+
+   .JoinInstagram-Container-Card:nth-child(2) {
+      transform: translate(0, 0);
+   }
+   
+   .JoinInstagram-Container-Card:nth-child(3) {
+      transform: translate(0, 0);
+   }
+
+   .JoinInstagram-Container-Card img {
+      object-position: center;
+   }
+
+   .JoinInstagram-Container-Card {
+      height: 280px;
+   }
+
+   #JoinInstagram-Content-Button {
+      padding: 10px 8px;
+      margin-top: 17px;
+   }
+   
+   #Insta-Icon {
+      font-size: 30px;
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      padding: 3px;
+      border-radius: 5px;
+   }
+   
+   .JoinInstagram-Content-Button-Text {
+      font-size: 12px;
+      margin-left: 10px;
+   }
+}

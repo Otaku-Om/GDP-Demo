@@ -1,0 +1,48 @@
+
+.s1_terms_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 15rem;
+  background: linear-gradient(to right, #29e2e8, #507df4);
+}
+.s1_terms_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.s1_terms_span {
+  color: white;
+}
+.s1_terms_home {
+  cursor: pointer;
+  margin-right: 10px;
+  color: white;
+}
+.s1_terms_home:hover {
+  color: #1365ca;
+}
+.s1_terms_homes {
+  margin-left: 10px;
+  color: white;
+}
+.s1_terms_h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.s1_terms_main {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-top: 10px;
+}
+@media screen and (max-width: 600px) {
+  .s1_terms_h1 {
+    font-size: 22px;
+  }
+  .s1_terms_main {
+    font-size: 15px;
+  }
+}

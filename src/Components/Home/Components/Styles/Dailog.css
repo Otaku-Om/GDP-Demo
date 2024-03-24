@@ -1,0 +1,231 @@
+.Dialog {
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   background-color: #1212129c;
+   top: 0;
+   left: 0;
+   z-index: 6;
+}
+
+.Dialog-Box {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 80%;
+   background-color: #1b1b1b;
+   padding: 50px;
+   border-radius: 25px;
+   gap: 20px;
+   position: fixed;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   top: 50%;
+   z-index: 7;
+   transition: all 0.9s ease;
+}
+
+.Dialog-Close {
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   cursor: pointer;
+}
+
+.Dialog-Box-Content {
+   flex: 1;
+}
+
+.Dialog-Box-Content-Top {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   font-size: 10px;
+   color: #828282;
+   margin-bottom: 20px;
+}
+
+.Dialog-Box-Content-Top p:first-child {
+   color: #fff;
+   margin-right: 20px;
+}
+
+.Dialog-Box-Content-Main {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.Dialog-Box-Content-Main h2 {
+   font-size: 22px;
+   margin-bottom: 35px;
+   line-height: 1.5;
+}
+
+.Dialog-Box-Content-Main-Pointers {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   font-size: 12px;
+   margin-bottom: 35px;
+   padding-left: 10px;
+}
+
+.Dialog-Box-Content-Main-Pointers li {
+   margin-top: 15px;
+   list-style-type: disc;
+}
+
+.Dialog-Box-Content-Main-Pointers li:first-child {
+   margin-top: 0;
+}
+
+.Dialog-Box-Content-Main-Video {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.Dialog-Box-Content-Main-Video-Container {
+   position: relative;
+   width: 150px;
+   border-radius: 8px;
+}
+
+.Dialog-Box-Content-Main-Video-Container img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 8px;
+}
+
+#Dialog-Box-Video-Button {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #634bfa;
+   border-radius: 50%;
+   padding: 5px;
+   font-size: 40px;
+   cursor: pointer;
+   transition: 0.3s ease-in;
+}
+
+#Dialog-Box-Video-Button:hover {
+   box-shadow: 1px 1px 10px #121212;
+}
+
+.Dialog-Box-Content-Main-Video p {
+   font-size: 12px;
+   margin-left: 20px;
+}
+
+
+@media screen and (max-width: 1200px) {
+   .Dialog-Box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 95%;
+      background-color: #1b1b1b;
+      padding: 50px 20px;
+      border-radius: 25px;
+      gap: 20px;
+      position: fixed;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      z-index: 7;
+      transition: all 0.9s ease;
+   }
+}
+@media screen and (max-width: 900px) {
+   .Dialog-Box {
+      padding: 22px 20px;
+   }
+
+   .Dialog-Close {
+      top: 10px;
+      right: 10px;
+   }
+
+   .Dialog-Box-Content-Main h2 {
+      font-size: 17px;
+   }
+
+   .Dialog-Box-Content-Top {
+      font-size: 9px;
+      line-height: 1.6;
+   }
+
+   .Dialog-Box-Content-Top p:first-child {
+      margin-right: 15px;
+   }
+
+   .Dialog-Box-Content-Main-Pointers {
+      font-size: 10px;
+   }
+
+   .Dialog-Box-Content-Main-Pointers li {
+      line-height: 1.6;
+   }
+
+   .Dialog-Box-Content-Main-Video p {
+      font-size: 10px;
+      margin-left: 15px;
+      line-height: 1.55;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .Dialog-Box {
+      padding: 30px 20px;
+      width: 90%;
+      flex-direction: column;
+      align-items: center;
+      top: 50%;
+      gap: 10px;
+   }
+
+   .Dialog-Box .Dialog-Box-Form p,
+   .Dialog-Box .InputField,
+   .Dialog-Box .CheckboxField {
+      width: 100%;
+   }
+
+   .Dialog-Box-Form {
+      width: 100%;
+   }
+
+   .Dialog-Box-Content-Top {
+      justify-content: center;
+   }
+
+   .Dialog-Box-Content-Main h2 {
+      text-align: center;
+      margin-bottom: 20px;
+   }
+
+   .Dialog-Box-Content-Main-Pointers {
+      align-items: center;
+      padding-left: 0;
+      margin-bottom: 20px;
+   }
+
+   .Dialog-Box-Content-Main-Pointers li {
+      text-align: left;
+      list-style-position: inside;
+      
+   }
+
+   .Dialog-Box-Content-Main-Video {
+      flex-direction: column;
+      display: none;
+   }
+
+   .Dialog-Box-Content-Main-Video p {
+      margin-left: 0;
+      margin-top: 15px;
+   }
+}

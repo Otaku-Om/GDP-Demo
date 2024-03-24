@@ -1,0 +1,14 @@
+.Terms{
+    margin-top: 80px;
+}
+@media screen and (max-width: 600px) {
+    .Terms{
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .Terms{
+        margin-top: 0px;
+    }
+}

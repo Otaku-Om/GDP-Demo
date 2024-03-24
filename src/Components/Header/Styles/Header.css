@@ -1,0 +1,172 @@
+.Header {
+  width: 100%;
+  max-width: 1600px;
+  height: 70px;
+  padding: 0 100px;
+  background-color: #141414;
+  position: fixed;
+  z-index: 5;
+}
+
+.Header-Container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logo {
+  width: 100px;
+  height: 80px;
+  padding: 15px;
+}
+
+.Logo img {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Header-Container-List {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Header-Container-List li {
+  padding: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.Header-Container-List li a:hover {
+  color: #634bfa;
+  transition: 0.5s ease;
+}
+
+.Header-Container-List li:first-child {
+  margin-left: 0;
+}
+
+.Header-Container-Button {
+  background-color: #634bfa;
+  color: white;
+  font-size: 15px;
+  font-style: normal;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#Header-MenuIcon,
+#Header-CloseIcon {
+  font-size: 40px;
+  cursor: pointer;
+  display: none;
+}
+.Header-Container-Mob {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: #141414;
+  font-size: 15px;
+  padding: 30px 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: 0.1px solid #252424;
+  box-shadow: 0px 0px 15px #ffffff13;
+  display: none;
+  transition: 0.5s ease;
+}
+
+.Header-Container-Mob-List li {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.Header-Container-Mob-Button {
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+  font-size: 15px;
+  background-color: #634bfa;
+  width: 40%;
+  margin: 0 auto;
+  padding: 18px 0;
+  margin: 0 30%;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .Header {
+    padding: 0 45px;
+  }
+
+  .Header-Container-List,
+  .Header-Container-Button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Header {
+    padding: 0 35px;
+  }
+
+  .Header-Container-List,
+  .Header-Container-Button {
+    display: none;
+  }
+
+  #Header-MenuIcon,
+  #Header-CloseIcon {
+    display: block;
+  }
+
+  .Header-Container-Mob {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Header {
+    padding: 0 20px;
+    height: 50px;
+  }
+
+  .Header-Container-Mob {
+    top: 50px;
+  }
+
+  .Logo {
+    width: 80px;
+    height: 70px;
+  }
+
+  .Header-Container-Mob-Button {
+    width: 80%;
+    margin: 0 10%;
+    padding: 12px 0;
+  }
+
+  #Header-MenuIcon,
+  #Header-CloseIcon {
+    font-size: 30px;
+  }
+}

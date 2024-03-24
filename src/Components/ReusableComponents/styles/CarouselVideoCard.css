@@ -1,0 +1,52 @@
+.Reviews-Video-Carousel-Card {
+   /* border: 3px solid greenyellow; */
+   flex: 1 0 32.5%;
+   flex-basis: calc(33.33% - 10px);
+   position: relative;
+   overflow: hidden;
+   scroll-snap-align: start;
+   cursor: grab;
+   border-radius: 15px;
+   background-color: #353535;
+}
+
+#Video-Button {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #634bfa;
+   border-radius: 50%;
+   padding: 5px;
+   font-size: 60px;
+   cursor: pointer;
+   transition: 0.3s ease-in;
+}
+
+#Video-Button:hover {
+   box-shadow: 1px 1px 10px #121212;
+}
+
+.Reviews-Video-Carousel-Card img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 15px;
+}
+
+@media screen and (max-width: 1030px) {
+   .Reviews-Video-Carousel-Card {
+      flex: 1 0 50%;
+      flex-basis: calc(50% - 10px);
+   } 
+}
+
+@media screen and (max-width: 600px) {
+   .Reviews-Video-Carousel-Card {
+      flex: 1 0 100%;
+   } 
+
+   #Video-Button {
+      font-size: 50px;
+   }
+}
